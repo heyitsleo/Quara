@@ -19,7 +19,7 @@ body {
 .hero {
 	height: 89vh;
     width: 100%;
-    background: linear-gradient(rgba(24, 24, 24, 0.465),rgb(24, 24, 24, 24)),url(../img/background.png) no-repeat center center;
+    background: linear-gradient(rgba(24, 24, 24, 0.465),rgb(24, 24, 24, 24)),url(https://media.discordapp.net/attachments/865029403981381652/934500166025752576/unknown.png?width=1248&height=702) no-repeat center center;
     background-size: cover;
     text-align: center;
     display: flex;
