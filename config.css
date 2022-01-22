@@ -6,8 +6,8 @@
 :root {
   --dark-color: #181818; /* Colour of dark section */
   --dark-text-color: #fff; /* Colour of text in dark section */
-  --semi-dark-text-color: #272727; /* 727 WHEN YOU FUCKING SEE IT */
-  --light-dark-text-color: #2f2f2f; /* Colour of text in dark section */
+  --semi-dark: #272727; /* 727 WHEN YOU FUCKING SEE IT */
+  --light-dark: #34393e; /* Colour of text in dark section */
   
   --light-color: #fff; /* Colour of light section */
   --light-text-color: #24272b; /* Colour of text in light section */
