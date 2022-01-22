@@ -1,6 +1,9 @@
 <!--
  Quara Theme by OllieJW (https://olliejw.me)
- License - https://olliejw.me/tos
+ Forked & Edited by BelowBedrock
+-->
+<!--
+ Open Source: https://github.com/BelowBedrock/Quara
 -->
 
 <!DOCTYPE html>
@@ -12,23 +15,17 @@
   <meta name="keywords" content="BelowBedrock, belowbedrock.cc, Below Bedrock cc, Minecraft, Event, Minecraft Event, Tournament, Minecraft Marketplace, Minecraft website, Esports">
   <meta name="theme-color" content="#4bb4f1">
 
-
+  
 
   <script id="staff-template" type="text/template">
     <div class="staff-card shrink">
-      <img src="https://crafatar.com/avatars/{{ uuid }}">
+      <img src="https://mc-heads.net/avatar/{{ uuid }}">
       <h3>{{ name }}</h3>
+      <hr>
       <h4>{{ rank }}</h4>
     </div>
   </script>
 
-  <script id="vote-template" type="text/template">
-    <div class="vote-card shrink shrink-dark">
-      <img src="{{ image }}">
-      <h3>{{ service }}</h3>
-      <h4><a href="{{ link }}" class="btn">Vote</a></h4>
-    </div>
-  </script>
 
   <!--
 	Notice:
@@ -54,7 +51,6 @@
 <body>
 
   <div id="target"></div>
-
   <script id="template" type="text/x-handlebars-template">
 
   <header>
@@ -62,7 +58,7 @@
       <h1><img src="https://media.discordapp.net/attachments/926810896829939752/932760716660834304/Below_Bedrock_Logo_RGB_Text_Only.png?width=1440&height=652" width="500px"></h1>
       <h3 class="server-status-container">Minecraft event team currently hosting the Ender Dragon Race!</span></h3>
 	  <div id="pinned">
-        <div class="pinned-card shrink shrink-pinned">
+        <div class="pinned-card">
           <i class="fas fa-thumbtack"></i><strong>Pinned Notice</strong>
           <p>{{pinned_text}}</p>
           <a id="pinned_readmore" class="btn">Read more</a>
@@ -71,117 +67,40 @@
 	</div>
   </header>
 
+
+
   <section id="header" class="dark">
     <nav class="nav">
       <ul class="nav_links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="#">Forums</a></li>
-        <li><a href="#">Discord</a></li>
-        <li><a href="innerpage.html">Innerpage</a></li>
+        <li><a href="index.html#about-us">About us</a></li>
+        <li><a href="http://discord.belowbedrock.cc">Discord</a></li>
+        <!-- <li><a href="creations.html">Creations</a></li> -->
+        <li><a href="https://github.com/BelowBedrock/Quara">Source Code</a></li>
       </ul>
     </nav>
   </section>
 
-  <section class="light">
-    <p class="enlarge">
-      <strong>About us</strong>
-      Hello, We are {{server_name}}! We are very happy to see you here. You may find our
-      store, games, staff and much more at this website. We are run by a small team of
-      developers each with unique parts to play in this server.
-    </p>
-    <p class="enlarge">
-      <strong>History</strong>
-      {{server_name}} started in 2020 as a small server for friends. As of 2021 we expanded
-      and became public for everyone to join and have fun. Because of our developer team
-      we have been able to create a unique experience for everyone to to enjoy.
-    </p>
-    <p class="enlarge">
-      <strong>Something else</strong>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare viverra accumsan. Fusce scelerisque a augue eu mollis. Praesent eu sollicitudin felis. Proin risus nulla, volutpat posuere lorem sit amet.
-    </p>
-    <p class="enlarge">
-      <strong>Something else</strong>
-      Praesent mollis, diam at vestibulum sodales, mi metus sagittis sem, et lobortis nulla dui nec leo. Mauris at metus tellus. Ut malesuada augue nec nisi. endrerit placerat dui. Morbi nec nisl quis est mattis facilisis ut quis enim.
-    </p>
-  </section>
+
 
   <section class="dark">
-    <h1>What makes us special</h1>
+    <hr>
+    <h1 style="padding-top: 60px;" id="about-us">About Us</h1>
     <div class="feature right">
-      <img src="img/feature-1.jpg" width="500px" class="enlarge">
+      <img src="https://media.discordapp.net/attachments/865029403981381652/934499745311907890/unknown.png?width=1248&height=702" width="500px" class="enlarge">
       <p class="enlarge">
-        <strong>Feature 1</strong>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare viverra accumsan. Fusce scelerisque a augue eu mollis. Praesent eu sollicitudin felis. Proin risus nulla, volutpat posuere lorem sit amet.
-      </p>
-    </div>
-    <hr>
-    <div class="feature left">
-      <img src="img/feature-2.jpg" width="500px" class="enlarge">
-      <p class="enlarge">
-        <strong>Feature 2</strong>
-        Praesent mollis, diam at vestibulum sodales, mi metus sagittis sem, et lobortis nulla dui nec leo. Mauris at metus tellus. Ut malesuada augue nec nisi. endrerit placerat dui. Morbi nec nisl quis est mattis facilisis ut quis enim.
-      </p>
-    </div>
-    <hr>
-    <div class="feature right">
-      <img src="img/feature-3.jpg" width="500px" class="enlarge">
-      <p class="enlarge">
-        <strong>Feature 1</strong>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare viverra accumsan. Fusce scelerisque a augue eu mollis. Praesent eu sollicitudin felis. Proin risus nulla, volutpat posuere lorem sit amet.
-      </p>
-    </div>
-    <hr>
-    <div class="feature left">
-      <img src="img/feature-4.jpg" width="500px" class="enlarge">
-      <p class="enlarge">
-        <strong>Feature 2</strong>
-        Praesent mollis, diam at vestibulum sodales, mi metus sagittis sem, et lobortis nulla dui nec leo. Mauris at metus tellus. Ut malesuada augue nec nisi. endrerit placerat dui. Morbi nec nisl quis est mattis facilisis ut quis enim.
+        <strong>Below Bedrock</strong>
+        We are small team creating and hosting quality minecraft events! Founded as "Ender Dragon Race Team" on 22th of August by Interz, Aso & Lukynka, later renamed to "Below Bedrock" after more members joining the team!
       </p>
     </div>
   </section>
 
+
   <section class="light">
-    <h1>Our staff team</h1>
+    <hr>
+    <h1 style="padding-top: 60px;">Our Team</h1>
     <div id="staff" class="grid"></div>
   </section>
-
-  <section class="dark">
-    <h1>News and announcements</h1>
-    <div id="news">
-      <div class="news-card">
-        <strong>Example Announcement</strong>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare viverra accumsan. Fusce scelerisque a augue eu mollis. Praesent eu sollicitudin felis. Proin risus nulla, volutpat posuere lorem sit amet.</p>
-        <p>Praesent mollis, diam at vestibulum sodales, mi metus sagittis sem, et lobortis nulla dui nec leo. Mauris at metus tellus. Ut malesuada augue nec nisi. endrerit placerat dui. Morbi nec nisl quis est mattis facilisis ut quis enim.</p>
-        <a href="#" class="btn">Read more</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="light">
-    <h1>Get Social</h1>
-    <div class="buttons">
-      <a href="#" class="btn">Discord</a>
-      <a href="#" class="btn">Forums</a>
-    </div>
-  </section>
-
-  <section class="dark">
-    <h1>Vote for us</h1>
-    <div id="vote" class="grid"></div>
-  </section>
-
-  <footer>
-    <!-- DO NOT REMOVE -->
-    <!-- DO NOT REMOVE -->
-    <!-- DO NOT REMOVE -->
-    <!-- DO NOT REMOVE -->
-    <a href="https://client.olliejw.me"><img alt="Made by OllieJW" title="Made by OllieJW" src="https://olliejw.me/img/ollie.jpg" style="height:4em"></a>
-    <!-- END DO NOT REMOVE -->
-    <!-- END DO NOT REMOVE -->
-    <!-- END DO NOT REMOVE -->
-    <!-- END DO NOT REMOVE -->
-    <p>Copyright &copy; {{server_name}} 2021</p>
-  </footer>
   </script>
   
 
