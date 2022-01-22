@@ -3,22 +3,7 @@
  * License - https://olliejw.me/tos
  */
 
-function copyIP() {
-    var before = document.getElementById("ip").innerText;
-	var ip = document.getElementById("ip");
-	var range = document.createRange();
-	range.selectNode(ip);
-	window.getSelection().removeAllRanges();
-	window.getSelection().addRange(range);
-	document.execCommand("copy");
-	window.getSelection().removeAllRanges();
-	// Change Text
-	ip.innerText = ip_copied;
-	setTimeout(
-	function() {
-	  ip.innerText = before;
-	},1000);
-}
+
 
 window.onload = function() {
   var template = document.getElementById('template').innerHTML;
@@ -36,9 +21,24 @@ window.onload = function() {
       document.getElementById("pinned_readmore").remove();
     }
   }
+  var r = getRandomNumber(1, 10);
+  if(r == 1) {
+    document.getElementById("about-us").innerHTML = "Among Us";
+  }
+  
+
 
 
 }
+
+
+
+
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min) + min);
+}
+
+
 
 function staff(name, uuid, rank) {
   let staffTemplate = $("#staff-template").html()
