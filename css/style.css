@@ -17,7 +17,7 @@ body {
 
 /* =========== Header =========== */
 .hero {
-	height: 90vh;
+	height: 89vh;
     width: 100%;
     background: linear-gradient(rgba(24, 24, 24, 0.465),rgb(24, 24, 24, 24)),url(../img/background.png) no-repeat center center;
     background-size: cover;
@@ -68,8 +68,8 @@ section {
 	flex-wrap: wrap;
 }
 .light {
-	background: var(--light-color);
-	color: var(--light-text-color);
+	background: linear-gradient(var(--dark-color), #272727);
+	color: white;
 }
 .dark {
 	background: var(--dark-color);
@@ -121,7 +121,7 @@ hr {
 	margin: 1em;
     position: relative;
     padding: 1em;
-    background: #efefef;
+    background: var(--light-dark);
     text-align: center;
 	width: 18em;
 	border-radius: 1em;
@@ -129,8 +129,15 @@ hr {
 .staff-card h3 {
 	line-height: 0;
 	font-family: 'Poppins',sans-serif;
-	color: #525252;
+	color: #ffffff;
+	
 }
+
+.staff-card h4 {
+	color: #ffffff;
+}
+
+
 @media (max-width: 1200px) {
   .staff-card {
       width: 13em;
@@ -202,7 +209,7 @@ hr {
 	margin: auto;
     position: relative;
     padding: 1em;
-    background: var(--pinned-message-color);
+    background: var(--light-dark);
     text-align: center;
 	border-radius: 1em;
 	color: var(--pinned-message-text-color);
@@ -249,20 +256,7 @@ hr {
 	color: var(--button-hover-text-color);
 }
 
-footer {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    background: #23272b;
-    padding: 30px 50px;
-}
-@media (min-width: 1200px) {
-  footer {
-    justify-content: space-between;
-  }
-}
+
 
 #header {
 	box-sizing: border-box;
@@ -336,23 +330,21 @@ footer {
 .enlarge:hover {
 	transform: scale(1.1);
 }
-.shrink {
-	transition: all .3s;
-}
-.shrink:hover {
-	transform: scale(0.95);
-    box-shadow: inset -7px -6px 20px 4px #cfcfcf;
-}
-.shrink-dark:hover {
-    box-shadow: inset -7px -6px 20px 4px #2e2e2e;
-}
-.shrink-pinned:hover {
-    box-shadow: inset -7px -6px 20px 4px #1a1a1a;
-}
+
 img {
 	transition: all .3s;
 	border-radius: 1em;
 }
 img:hover {
 	filter: drop-shadow(0.5rem 0.5rem 0.25rem rgba(0,0,0,0.2));
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+.footer {
+	color:white;
+	background: black;
 }
