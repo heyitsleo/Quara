@@ -5,14 +5,15 @@
 
 <!DOCTYPE html>
 <head>
-  <title>Quara | Demo</title>
+  <title>BelowBedrock</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <meta name="title" content="Quara | Demo">
-  <meta name="description" content="Quara is a great looking website for Minecraft servers! Highly customisable with unique features.">
-  <meta name="keywords" content="OllieJW, olliejw.me, OllieJW me, Spigot, Developer, Spigot Developer, Quara, Minecraft Server Website, Minecraft website theme, Minecraft server website theme">
+  <meta name="title" content="BelowBedrock | Minecraft Event Team">
+  <meta name="description" content="Minecraft event team currently workin on the Ender Dragon Race!">
+  <meta name="keywords" content="BelowBedrock, belowbedrock.cc, Below Bedrock cc, Minecraft, Event, Minecraft Event, Tournament, Minecraft Marketplace, Minecraft website, Esports">
   <meta name="theme-color" content="#4bb4f1">
 
-  <!-- Edit this to change staff cards! -->
+
+
   <script id="staff-template" type="text/template">
     <div class="staff-card shrink">
       <img src="https://crafatar.com/avatars/{{ uuid }}">
@@ -43,7 +44,6 @@
   <script src="js/main.js"></script>
   <script src="config.js"></script>
   
-  <script>tosAgreed = false</script>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Raleway|Quicksand">
@@ -59,13 +59,13 @@
 
   <header>
     <div class="hero" id="hero">
-      <h1>Welcome to {{server_name}}!</h1>
-      <h3 class="server-status-container">Join <span class="server-status info">0</span> other people on <span class="info ip" id="ip" onclick="copyIP()">{{server_ip}}</span></h3>
+      <h1><img src="https://media.discordapp.net/attachments/926810896829939752/932760716660834304/Below_Bedrock_Logo_RGB_Text_Only.png?width=1440&height=652" width="500px"></h1>
+      <h3 class="server-status-container">Minecraft event team currently hosting the Ender Dragon Race!</span></h3>
 	  <div id="pinned">
         <div class="pinned-card shrink shrink-pinned">
           <i class="fas fa-thumbtack"></i><strong>Pinned Notice</strong>
-          <p>A short, important message to catch attention like downtime, sales or notices.</p>
-          <a href="#" class="btn">Read more</a>
+          <p>{{pinned_text}}</p>
+          <a id="pinned_readmore" class="btn">Read more</a>
         </div>
       </div>
 	</div>
@@ -184,6 +184,5 @@
   </footer>
   </script>
   
-  <!-- License -->
-  <script src="https://remote.olliejw.me/license.js"></script>
+
 </body>
