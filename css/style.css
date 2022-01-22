@@ -231,6 +231,7 @@ hr {
 .pinned-card > .btn:hover {
 	background: var(--pinned-button-hover-color);
 	color: var(--pinned-button-hover-text-color);
+	cursor: pointer;
 }
 
 @media (max-width: 1200px) {

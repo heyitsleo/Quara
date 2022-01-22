@@ -5,8 +5,8 @@
 
 
 var pinned_notice = true;
-var pinned_text = "Website under developement!";
-var pinned_read_more = false;
+var pinned_text = "You are never getting out!";
+var pinned_read_more = true;
 var pinned_url = "https://www.youtube.com/watch?v=XHx1ai1JWJ0";
 
 var firefly_count = 20;

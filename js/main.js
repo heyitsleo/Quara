@@ -5,6 +5,12 @@
 
 
 
+function noticereadModeClick() {
+  window.open(pinned_url);
+}
+
+
+
 window.onload = function() {
   var template = document.getElementById('template').innerHTML;
   var compiled_template = Handlebars.compile(template);
