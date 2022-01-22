@@ -335,6 +335,7 @@ img {
 	transition: all .3s;
 	border-radius: 1em;
 }
+
 img:hover {
 	filter: drop-shadow(0.5rem 0.5rem 0.25rem rgba(0,0,0,0.2));
 	-webkit-transform: scale(1.1);
@@ -348,3 +349,4 @@ img:hover {
 	color:white;
 	background: black;
 }
+
