@@ -16,6 +16,7 @@ window.onload = function() {
   var compiled_template = Handlebars.compile(template);
   var rendered = compiled_template({
       pinned_text: pinned_text,
+      pinned_read_more_text: pinned_read_more_text,
   });
   document.getElementById('target').innerHTML = rendered;
 

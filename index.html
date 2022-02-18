@@ -37,7 +37,6 @@
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
   <script src="https://mcapi.us/scripts/minecraft.min.js"></script>
-  <script src="js/fireflies.js"></script>
   <script src="js/main.js"></script>
   <script src="config.js"></script>
   
@@ -61,7 +60,7 @@
         <div class="pinned-card">
           <i class="fas fa-thumbtack"></i><strong>Pinned Notice</strong>
           <p>{{pinned_text}}</p>
-          <a id="pinned_readmore" class="btn" onclick="noticereadModeClick()">Read more</a>
+          <a id="pinned_readmore" class="btn" onclick="noticereadModeClick()">{{ pinned_read_more_text }}</a>
         </div>
       </div>
 	</div>
