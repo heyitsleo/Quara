@@ -47,11 +47,10 @@ function getRandomNumber(min, max) {
 
 
 
-function staff(name, uuid, rank) {
+function staff(name, rank) {
   let staffTemplate = $("#staff-template").html()
     .replaceAll("{{ name }}", name)
     .replaceAll("{{ rank }}", rank)
-	.replaceAll("{{ uuid }}", uuid)
 
   setTimeout(
     function() {
