@@ -12,11 +12,10 @@ var pinned_url = "https://youtu.be/GZGQQNcrIok";
 
 
 
-staff("LukynkaCZE", "Project Lead / Developer");
-staff("AsoDesu_", "Lead Developer");
+staff("AsoDesu_", "Project Lead & Developer");
+staff("LukynkaCZE", "Lead Developer");
 staff("Ryeera", "Developer");
-staff("Interz", "Graphics / Organizer");
-staff("OnlyAdqm", "Builder / Editor");
+staff("OnlyAdqm", "Builder & Editor");
 staff("CupcakeGaming882", "Builder");
 staff("claybutgray", "Sound Designer");
-staff("Swordington", "Tester Manager");
+staff("Swordington", "Testing Manager & Infrastructure");
