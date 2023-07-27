@@ -16,5 +16,5 @@ staff("enjoyings", "Project Lead & Developer");
 staff("PrismaticMC", "Lead Developer");
 staff("CCrven", "Developer");
 staff("HTNMC", "Builder & Editor");
-staff("Fur4knS", "Builder");
-staff("N/A", "Sound Designer");
+staff("Furk4nS", "Builder");
+staff("MissingBuilder", "Sound Designer");
